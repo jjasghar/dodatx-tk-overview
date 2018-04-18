@@ -36,6 +36,7 @@ When using rename spec/spec_helper_local.rb to spec/spec_helper.rb and a separat
 ```
 bundle exec kitchen create centos
 bundle exec kitchen converge centos
+# Wait a min or two for Java to spin up
 bundle exec kitchen verify centos
 ```
 
@@ -43,6 +44,8 @@ On all in one command:
 
 ```
 bundle exec kitchen test centos
+# You'll get a failure with InSpec about Java, wait about a minute
+bundle exec kitchen verify centos
 ```
 
 [kitchen]: http://kitchen.ci

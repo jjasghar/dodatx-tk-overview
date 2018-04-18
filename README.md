@@ -12,7 +12,7 @@ around them.
 
 ## Quick how to install ruby with rvm
 
-[rvm][rvm] is method of managing ruby version.
+[rvm][rvm] is method of managing ruby versions.
 
 Import the gpg key from https://rvm.io
 
