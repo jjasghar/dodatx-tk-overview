@@ -1,42 +1,44 @@
-# vim
+# kitchen chef
 
-## Scope
+kitchen chef for testing ansible using [test kitchen][kitchen] and [Inspec][inspec].
 
-Ensures vim is installed on the machine you run this against
+This demonstrates using test-kitchen, chef, and inspec to build and verify vim is installed.
+  * Everything is done via ssh from the Chef/Inspec server.
+  * In this demonstration both servers are centos running under virtual box on your workstation
 
-## Requirements
+## Workstation Software Installation
 
-- Chef 12.0.0 or higher
+1. Have ruby installed, you'll need that.
+2. Run the following commands:
 
-## Usage
-
-### default.rb
-
-Runs the package resource for vim.
-
-## Contributing
-1. Fork the repository on Github
-2. Create a named feature branch (like `add_component_x`)
-3. Write your change
-4. Write tests for your change (if applicable)
-5. Run the tests, ensuring they all pass
-6. Submit a Pull Request using Github
-
-## License and Authors
-- Author:: JJ Asghar (jj@chef.io)
-
-```text
-Copyright 2017 JJ Asghar
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
 ```
+gem install bundler
+```
+
+```
+bundle
+```
+
+```
+bundle exec kitchen list
+```
+
+This will return a list if everything is correctly installed.
+
+There are 2 ways to run chef either locally or remotely. In the local option you just need one server and chef and the software you are configuring are all installed on the one server.
+In the remote option you need at least 2 servers. One server will get chef installed on it and it will then use ssh to configure the second server remotely.
+
+```
+bundle exec kitchen create centos
+bundle exec kitchen converge centos
+bundle exec kitchen verify centos
+```
+
+On all in one command:
+
+```
+bundle exec kitchen test centos
+```
+
+[kitchen]: http://kitchen.ci
+[inspec]: http://github.com/chef/inspec
