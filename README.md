@@ -8,7 +8,31 @@ around them.
 - [`ansible`](ansible/) - ansible demo
 - [`chef`](chef/) - chef demo
 - [`puppet`](puppet/) - puppet demo
-- [`salt`](salt/) - salt demo
+- [`saltstack`](saltstack/) - salt demo
+
+## Quick how to install ruby with rvm
+
+[rvm][rvm] is method of managing ruby version.
+
+Import the gpg key from https://rvm.io
+
+```
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+```
+
+Run the installer script
+
+```
+\curl -sSL https://get.rvm.io | bash -s stable
+```
+
+Install and use ruby
+
+```
+rvm use --install --create 2.5.0@GEMSETNAME
+```
+
+and rvm will manage installing all of the required packages for managing ruby versions via rvm.
 
 ## License and Authors
 
@@ -29,3 +53,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+
+[rvm]: https://rvm.io
