@@ -37,9 +37,11 @@ and rvm will manage installing all of the required packages for managing ruby ve
 ## License and Authors
 
 - Author:: JJ Asghar <jjasghar@gmail.com>
+- Author:: Shaun Mouton <sdmouton@gmail.com>
 
 ```text
 Copyright 2018 JJ Asghar
+Copyright 2018 Shaun Mouton
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
