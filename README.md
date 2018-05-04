@@ -34,6 +34,14 @@ rvm use --install --create 2.5.0@GEMSETNAME
 
 and rvm will manage installing all of the required packages for managing ruby versions via rvm.
 
+## Vagrant installation
+
+If you don't know where to start, you'll need vagrant to spin up virtual machines on you laptop. Visit https://www.vagrantup.com/ to install and set it up.
+
+## VirtualBox installation
+
+You'll probably need virtual box if you don't have it ;). https://www.virtualbox.org/
+
 ## License and Authors
 
 - Author:: JJ Asghar <jjasghar@gmail.com>
