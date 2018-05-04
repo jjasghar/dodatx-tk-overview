@@ -2,13 +2,13 @@
 
 kitchen-puppet-example for testing puppet using [test kitchen][kitchen] and [Inspec][inspec].
 
-This demonstration sets up an SSH server on a [Vagrant][https://www.vagrantup.com/] instance running on your local machine.
+This demonstration sets up an SSH server on a [Vagrant](https://www.vagrantup.com/) instance running on your local machine.
 
 ## Workstation Software Installation
 
 1. Have ruby installed, you'll need that - see the main README for RVM instructions.
-2. Have [vagrant][https://www.vagrantup.com/downloads.html] installed and in the PATH.
-3. Have [virtualbox][https://www.virtualbox.org/wiki/Downloads] installed.
+2. Have [vagrant](https://www.vagrantup.com/downloads.html) installed and in the PATH.
+3. Have [virtualbox](https://www.virtualbox.org/wiki/Downloads) installed.
 2. Run the following commands:
 
 ```
